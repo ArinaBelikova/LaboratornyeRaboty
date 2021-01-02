@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include <locale.h>
+#include<math.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x, y;
+	printf("Введите x\n");
+	scanf("%f", &x);
+	y = 4*pow(x-3, 6)-7*pow(x-3, 3)+2;
+	printf("%f", y);
+	return 0;
+}
