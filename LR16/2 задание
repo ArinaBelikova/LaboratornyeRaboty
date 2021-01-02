@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	  setlocale(LC_ALL, "Rus");	
+    int A[10], N, D, k, i;
+    printf("Введите данные(N, A, D) ");
+    scanf("%i  %i  %i",&N, &A[0], &D);
+    k = 1;
+    for (i = 1; i < N; i++){
+        k*=D;
+        A[i]=A[0]*k;
+    }
+    for (i = 0; i < N; i++) printf("%i ",A[i]);
+    return 0;
+}
