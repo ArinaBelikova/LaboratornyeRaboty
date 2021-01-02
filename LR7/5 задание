@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x, A, B;
+	printf("Введите коэффициенты уравнения Ax+B=0, A не равно 0\n");
+	scanf("%f %f", &A, &B);
+	x=-B/A;
+	printf("%f", x);
+	return 0;
+}
