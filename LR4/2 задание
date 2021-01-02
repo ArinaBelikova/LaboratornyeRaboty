@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float d, pi=3.14;
+	printf(" Введите диаметр окружности\n");
+	scanf(" %f ", &d); 
+	float L = pi*d ; 
+	printf(" Длина окружности: %f", L); 
+	return 0; 
+}
