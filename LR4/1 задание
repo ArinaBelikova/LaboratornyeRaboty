@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, b;
+	printf(" Введите стороны прямоугольника\n");
+	scanf(" %f ", &a);
+	scanf(" %f ", &b); 
+	float S = a*b; 
+	float P = 2*(a+b); 
+	printf(" Площадь прямоугольника: %f", S); 
+	printf(" Периметр прямоугольника: %f", P); 
+	return 0; 
+}
