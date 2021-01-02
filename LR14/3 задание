@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int N, i, k;
+	printf("Введите число \n") ;
+	scanf ("%i", &N);
+	while (i < N) {
+    k++;
+    i += 3;
+	}
+	printf("K: %i\Сумма:%i\n", k, i);
+	return 0;
+}
