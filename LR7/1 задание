@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float r;
+	printf("Введите значение угла\n");
+	scanf("%f", &r);
+	r=(r*3.14)/180;
+	printf("Значение угла в радианах: %f", r);
+}
