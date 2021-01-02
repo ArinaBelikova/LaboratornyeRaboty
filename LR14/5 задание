@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int A, B;
+	printf("Введите два числа (A > B)\n") ;
+	scanf ("%i  %i", &A, &B);  
+	while ((A != 0) & (B != 0)){
+    if (A > B) A = A % B;
+    else B =B % A;
+	}
+	printf("%i", A+B);
+	return 0;
+}
