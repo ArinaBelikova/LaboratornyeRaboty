@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <locale.h>
+ 
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x, y;
+	printf("Введите координаты точек\n");
+	scanf ("%f  %f", &x, &y);	
+	if ((x>0) & (y>0)) printf("I четверть\n");
+	else if ((x<0) & (y>0)) printf("II четверть\n");
+	else if ((x<0) & (y<0)) printf("III четверть\n");
+	else printf("IV четверть\n");
+	return 0;
+}    
