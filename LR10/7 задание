@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, b, c;
+	printf("Введите стороны треугольника\n");
+	scanf ("%i  %i  %i", &a, &b, &c);
+  printf("%d\n",(a < b + c) & (b < a + c) & (c < a + b));
+  return 0;
+}
