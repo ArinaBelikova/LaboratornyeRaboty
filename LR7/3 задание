@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float X, A, Y, kg, kg2;
+	printf("Введите колличество килограмм(Х)\n");
+	scanf("%f", &X);
+	printf("Введите стоимость Х килограмм(A)\n");
+	scanf("%f", &A);
+	printf("Введите колличество килограмм, стоимость которого нужно найти(Y)\n");
+	scanf("%f", &Y);
+	kg = (1*A)/X;
+	kg2 = (Y*A)/X;
+	printf("Стоимость 1 кг: %f, стоимость Y килограмм: %f", kg, kg2);
+	return 0;
+}
