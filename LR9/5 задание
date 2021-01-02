@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	  setlocale(LC_ALL, "Rus");
+    int Y;
+    printf("Введите год\n");
+    scanf ("%i", &Y);
+    printf("Это %i век",(Y/100)+1);
+    return 0;
+}
