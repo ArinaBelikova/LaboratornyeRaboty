@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include <locale.h>
+#include<math.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float A, A2, A4, A8;
+	printf("Введите A\n");
+	scanf("%f", &A);
+	A2=A*A;
+	A4=A2*A2;
+	A8=A4*A4;
+	printf("%f", A8);
+	return 0;
+}
