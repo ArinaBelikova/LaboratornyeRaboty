@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float k=1, a=1;
+	int N;
+	printf("Введите ") ;
+	scanf ("%i", &N);
+	for (int i = 1; i <= N;  i++){
+		a+=0.1;
+		k*=a;
+	}
+	printf("%f ", k);
+	return 0;
+}
