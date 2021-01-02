@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void PoweraA3(float a, float *b)
+{
+   *b=a*a*a;
+}
+ 
+int main()
+{
+    for(int i = 1;i <= 5; i++){
+        float a, b;
+        printf("A: ");
+        scanf("%f", &a);
+        PoweraA3(a, &b);
+        printf("B: %f\n", b);
+   }
+    return 0;
+}
