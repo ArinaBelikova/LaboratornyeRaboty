@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h> 
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c;
+	printf("Введите стороны треугольника\n");
+	scanf ("%i  %i  %i", &a, &b, &c);
+	printf("%i ", sqrt(a*a+b*b)==c);
+	return 0;
+}
