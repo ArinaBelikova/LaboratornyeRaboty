@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float xa, ya, xb, yb, xc, yc, P;
+	printf("Введите координаты точки A\n");
+	scanf("%f", &xa);
+	scanf("%f", &ya);
+	printf("Введите координаты точки B\n");
+	scanf("%f", &xb);
+	scanf("%f", &yb);
+	printf("Введите координаты точки C\n");
+	scanf("%f", &xc);
+	scanf("%f", &yc);
+	float a = pow(xc-xa, 2);
+	float c = pow(yc-ya, 2);
+	float AC= sqrt(a+c);
+	float b = pow(xc-xb, 2);
+	float d = pow(yc-yb, 2);
+	float BC= sqrt(b+d);	
+	P=AC*BC;
+	printf("%f ", P);
+	return 0;
+}
