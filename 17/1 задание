@@ -5,9 +5,9 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
     int n, k, l, i, arr[10], s = 0;
-    printf("Ââåäèòå äëèíó ìàññèâà: ");
+    printf("Введите длину массива: ");
     scanf("%i", &n);
-    printf("Ââåäèòå K è L(1 < K <= L <= N): ");
+    printf("Введите K и L(1 < K <= L <= N): ");
     scanf("%i  %i",&k, &l);
     for (i = 0; i < n; i++){
         printf("arr[%i]: ", i + 1);
