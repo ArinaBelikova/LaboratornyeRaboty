@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");    
+	int n, i, a[10];
+	printf("Введите длину массива: ");
+    scanf("%i", &n);
+    for (i = 0; i < n; i++){
+		printf("a[%i]: ", i + 1);
+    	scanf("%i", &a[i]);
+	}
+ 	for (int i = 0; i < n - 1; i++){
+            if (a[i] > a[i + 1]){
+                int c = a[i];
+                a[i] = a[i + 1];
+                a[i + 1] = c;
+            }
+            else
+                break;
+    }
+    printf("A: \n");
+    for (i = 0; i < n; i++) printf("%i ", a[i]);
+    return 0;
+}
